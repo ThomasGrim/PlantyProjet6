@@ -1,0 +1,63 @@
+Log created: 2024-02-26 12:45:38
+Type: backup
+[2024-02-26 12:45:38][notice]Start backing up.
+[2024-02-26 12:45:38][notice]server info fcgi:Off max execution time: 300 wp version:6.4.3 php version:8.2.12 db version:10.4.32 php ini:safe_mode: memory_limit:256M memory_get_usage:68,44 Mo memory_get_peak_usage:69,21 Mo extensions:PDO enabled curl enabled zlib enabled   is_multisite:0
+[2024-02-26 12:45:38][notice]Prepare to backup backup_db files.
+[2024-02-26 12:45:38][notice]Start exporting database.
+[2024-02-26 12:45:38][notice]Preparing to dump table wp_e_events
+[2024-02-26 12:45:38][notice]Preparing to dump table wp_links
+[2024-02-26 12:45:38][notice]Preparing to dump table wp_term_relationships
+[2024-02-26 12:45:38][notice]Preparing to dump table wp_commentmeta
+[2024-02-26 12:45:38][notice]Preparing to dump table wp_e_submissions_values
+[2024-02-26 12:45:38][notice]Preparing to dump table wp_term_taxonomy
+[2024-02-26 12:45:38][notice]Preparing to dump table wp_termmeta
+[2024-02-26 12:45:38][notice]Preparing to dump table wp_terms
+[2024-02-26 12:45:38][notice]Preparing to dump table wp_usermeta
+[2024-02-26 12:45:38][notice]Preparing to dump table wp_users
+[2024-02-26 12:45:38][notice]Preparing to dump table wp_comments
+[2024-02-26 12:45:38][notice]Preparing to dump table wp_e_submissions_actions_log
+[2024-02-26 12:45:38][notice]Preparing to dump table wp_e_submissions
+[2024-02-26 12:45:39][notice]Preparing to dump table wp_options
+[2024-02-26 12:45:39][notice]Preparing to dump table wp_posts
+[2024-02-26 12:45:39][notice]Preparing to dump table wp_postmeta
+[2024-02-26 12:45:39][notice]Exporting database finished.
+[2024-02-26 12:45:39][notice]Start compressing database
+[2024-02-26 12:45:39][notice]Prepare to zip file. file: localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_db.sql
+[2024-02-26 12:45:39][notice]Adding zip files completed.localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_db.part001.zip, filesize: 5,49 Mo
+[2024-02-26 12:45:39][notice]Compressing database completed
+[2024-02-26 12:45:39][notice]Backing up backup_db completed.
+[2024-02-26 12:45:39][notice]Prepare to backup backup_themes files.
+[2024-02-26 12:45:39][notice]Compressing zip file:localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_themes.part001.zip index:336
+[2024-02-26 12:45:41][notice]Compressing zip file:localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_themes.part001.zip success. index:336 file size:19,00 Mo
+[2024-02-26 12:45:41][notice]Backing up backup_themes completed.
+[2024-02-26 12:45:41][notice]Prepare to backup backup_plugin files.
+[2024-02-26 12:45:42][notice]Compressing zip file:localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_plugin.part001.zip index:2914
+[2024-02-26 12:45:56][notice]Compressing zip file:localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_plugin.part001.zip success. index:2914 file size:78,76 Mo
+[2024-02-26 12:45:56][notice]Backing up backup_plugin completed.
+[2024-02-26 12:45:56][notice]Prepare to backup backup_uploads files.
+[2024-02-26 12:45:56][notice]Compressing zip file:localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_uploads.part001.zip index:32
+[2024-02-26 12:45:56][notice]Compressing zip file:localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_uploads.part001.zip success. index:32 file size:6,64 Mo
+[2024-02-26 12:45:56][notice]Backing up backup_uploads completed.
+[2024-02-26 12:45:56][notice]Prepare to backup backup_content files.
+[2024-02-26 12:45:56][notice]Compressing zip file:localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_content.part001.zip index:136
+[2024-02-26 12:45:57][notice]Compressing zip file:localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_content.part001.zip success. index:136 file size:4,80 Mo
+[2024-02-26 12:45:57][notice]Backing up backup_content completed.
+[2024-02-26 12:45:57][notice]Prepare to backup backup_core files.
+[2024-02-26 12:45:58][notice]Compressing zip file:localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_core.part001.zip index:2631
+[2024-02-26 12:46:15][notice]Compressing zip file:localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_core.part001.zip success. index:2631 file size:54,43 Mo
+[2024-02-26 12:46:15][notice]Backing up backup_core completed.
+[2024-02-26 12:46:15][notice]Prepare to backup backup_merge files.
+[2024-02-26 12:46:15][notice]Prepare to zip file. file: localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_db.zip
+[2024-02-26 12:46:15][notice]Adding zip files completed.localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_all.part001.zip, filesize: 5,49 Mo
+[2024-02-26 12:46:15][notice]Prepare to zip file. file: localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_themes.zip
+[2024-02-26 12:46:16][notice]Adding zip files completed.localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_all.part001.zip, filesize: 23,00 Mo
+[2024-02-26 12:46:16][notice]Prepare to zip file. file: localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_plugin.zip
+[2024-02-26 12:46:18][notice]Adding zip files completed.localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_all.part001.zip, filesize: 41,10 Mo
+[2024-02-26 12:46:18][notice]Prepare to zip file. file: localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_uploads.zip
+[2024-02-26 12:46:18][notice]Adding zip files completed.localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_all.part001.zip, filesize: 47,75 Mo
+[2024-02-26 12:46:18][notice]Prepare to zip file. file: localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_content.zip
+[2024-02-26 12:46:18][notice]Adding zip files completed.localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_all.part001.zip, filesize: 52,55 Mo
+[2024-02-26 12:46:18][notice]Prepare to zip file. file: localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_core.zip
+[2024-02-26 12:46:19][notice]Adding zip files completed.localhost_p6_wpvivid-65dc79e22f279_2024-02-26-12-45_backup_all.part001.zip, filesize: 64,90 Mo
+[2024-02-26 12:46:20][notice]Backing up backup_merge completed.
+[2024-02-26 12:46:20][notice]Backup completed.
