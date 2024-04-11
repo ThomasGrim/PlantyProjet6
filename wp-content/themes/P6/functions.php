@@ -6,17 +6,16 @@ add_action('after_setup_theme','tbp6_setup');
 add_filter( 'use_default_gallery_style', '__return_false' );
 add_action('init', 'enregistrer_mon_shortcode');
 
-function personnaliser_menu_admin_bar() {
-    if ( ! is_user_logged_in() ) {
-        // Si l'utilisateur n'est pas connecté, retire le menu admin
-        add_filter( 'show_admin_bar', '__return_false' );
-    } else {
-        // Ici, vous pouvez ajouter des éléments personnalisés au menu admin si nécessaire
-        // en utilisant la fonction add_action ou add_menu par exemple
-        // Exemple : add_action('admin_bar_menu', 'ajouter_mon_element', 100);
+
+// Ajouter un lien d'admin dans le menu WordPress
+function my_custom_admin_link($items, $args) {
+    if ($args->theme_location == 'main' && is_user_logged_in() && current_user_can('administrator')) {
+        $items .= '<li class="menu-item"><a href="'. admin_url() .'">Admin</a></li>';
     }
+    return $items;
 }
-add_action( 'after_setup_theme', 'personnaliser_menu_admin_bar' );
+add_filter('wp_nav_menu_items', 'my_custom_admin_link', 10, 2); 
+
 
 
 
