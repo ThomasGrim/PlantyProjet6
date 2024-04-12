@@ -7,14 +7,6 @@ add_filter( 'use_default_gallery_style', '__return_false' );
 add_action('init', 'enregistrer_mon_shortcode');
 
 
-// Ajouter un lien d'admin dans le menu WordPress
-function my_custom_admin_link($items, $args) {
-    if ($args->theme_location == 'main' && is_user_logged_in() && current_user_can('administrator')) {
-        $items .= '<li class="menu-item"><a href="'. admin_url() .'">Admin</a></li>';
-    }
-    return $items;
-}
-add_filter('wp_nav_menu_items', 'my_custom_admin_link', 10, 2); 
 
 
 

@@ -22,3 +22,12 @@ endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // END ENQUEUE PARENT ACTION
+
+// Ajouter un lien d'admin dans le menu WordPress
+function my_custom_admin_link($items, $args) {
+    if ($args->theme_location == 'main' && is_user_logged_in() && current_user_can('administrator')) {
+        $items .= '<li class="menu-item"><a href="'. admin_url() .'">Admin</a></li>';
+    }
+    return $items;
+}
+add_filter('wp_nav_menu_items', 'my_custom_admin_link', 10, 2); 
